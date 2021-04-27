@@ -1,0 +1,22 @@
+body {
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 35px;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+header {
+    background-color: pink;
+    border-radius: 10px;
+}
