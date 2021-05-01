@@ -53,13 +53,80 @@
         <li>Any value that isn't a primitive type like above is an object. These include arrays, functions, and object literals</li>
           <br>
           <li>A special operator <i>typeof</i> can be used to find out the type of value each is </li><br><br>      
-          <li>Variables-used to refer to a value store in memory</li>                           
+          <li>Variables-used to refer to a value store in memory</li>  
+          <li><i>var</i>has changed to <i>let</i></li>
+          <li>Scope refers to where a constant or variable is accessible by the program</li>
+          <ol>Global Scope- any variable declared outside of a block. Accessible everywhere</ol>
+          <ol>Local Scope-any variable defined inside a block</ol>
+          <li><i>let</i>and<i>const</i>define scopes. In general, if a value is unlikely to change in your code than you shoudl delcare it 
+          using const, and let should only be used for storing values that will need to be reassigned while the programis running</li>
+          <li><i>length</i>tells us how many characters are n the string--name.length</li>
+            <br>
+            <li>Template Literals-Template literals use the backtick character, ` , to deliminate the string, as shown in the example below:</li>
+            <br><li>Symbols-used to create unique values. Can only be used by using <i>Symbol()</i></li>
+            <li>Numbers-can be integers(whole numbers) or floating point numbers(decimals or floats)</li>
+          </ul>
+          <h4>Quiz Ninja</h4>
+      
+        const question = "What is Superman's real name?"<br>
+        const answer = prompt(question);<br>
+        console.log(`You answered ${answer}`);<br>
+
+      
+      
+
+      <h3>Chapter 3-Arrays, Logics and Loops</h3>
+      <ul>
+        <li>Arrays are an ordered list of values</li>
+        <li>Multidimensional arrays are arrays that contain other arrays</li>
+        <li>Arrays have lots of methods that can be used to manipulate items in the array</li>
+        <li>Sets are new in ES6 and are ordered lists of non-duplicate values</li>
+        <li>Maps are new in ES6 and are ordered lists of key-value pairs</li>
+        <li>We can use an if and else statement to control the flow of code</li>
+        <li>The switch statement can be used instead of multiple if and else statements</li>
+        <li>A while loop and do ... while loop can be used to repeat a block of code while a condition is still true</li>
+        <li>A for loop works in a similar way to a while loop, but has a different syntax</li>
+        <li>A for-of loop can be used to iterate over an array</li>
+        <li>Sets and maps are enumerable, so can also be looped over using a for-of loop</li>
+      </ul>
+        <li>**Refer to textbook for more highlighted information</li>
+
+        <li>script</li>
+          const quiz = [<br>
+  ["What is Superman's real name?", "Clark Kent"],<br>
+  ["What is Wonder Woman's real name?", "Diana Prince"],<br>
+  ["What is Batman's real name?","Bruce Wayne"]<br>
+];<br>
+let score = 0 //initial score<br>
+for(const [question,answer] of quiz){<br>
+  const response = prompt(question);<br>
+  if(response == answer){<br>
+    console.log('Correct!');<br>
+    score++;<br>
+  } else {<br>
+      console.log(`Wrong! The correct answer was ${answer}`);<br>
+     }<br>
+} <br>
+  console.log(`Game Over you scored ${score} point${score !== 1 ? 's' : ''}`);<br>
+
+      <h4>Chapter 4-Functions</h4>
+      <li>Functions are first-class objects that behave the same way as other values.</li>
+      <li>Function literals can be defined using the function declaration, or by creating afunction expressionby assigning an anonymous function to a variable.</li>
+      <li>All functions return a value. If this is not explicitly stated, the function will return undefined.</li>
+      <li>A parameter is a value that is written in the parentheses of a function declaration and can be used like a variable inside the function’s body.</li>
+      <li>An argument is a value that is provided to a function when it is invoked.</li>
+      <li>The arguments variable is an array-like object that allows access to each argument provided to the function using index notation.</li>
+      <li>The rest operator can be used to access multiple arguments as an array.</li>
+      <li>Default arguments can be supplied to a function by assigning them to the parameters.</li>
+      <li>Arrow functions are a new shorthand notation that can used for writing anonymous functions in ES6</li>
+      <li>Function declarations can be invoked before they are defined because they are hoisted to the top of the scope, but function expressions cannot be invoked until after they are defined.</li>
+      <li>Acallbackis a function that is provided as an argument to another function.</li>
         
         
                 
         
         
-    </ul>
+ 
        
        
                      
