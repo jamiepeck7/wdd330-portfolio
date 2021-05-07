@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+<meta charset="utf-8">
+<meta name ="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="portfolio for Jamie Peck wdd330">
+ <title>Jamie Peck's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+   
+   
+  
+    </head>
+  <body>
+  <header>
+    <div>
+      <h1>Jamie Peck - WDD 330 Portfolio</h1>
+    </div>
+    </header>
+   <hr>
+    <h2>Notes</h2>
+    <h3>Things to remember--</h3>
+    
+    <ul>
+      <li>When you write something inside ${} in a template literal, its result will be computed</li>
+      <li>Example Build a Table</li>
+      <li>Operators are >= (greater than or equal to), <= (less than or equal to), == (equal to), and != (not equal to).</li>
+      <li>Numbers, strings, Booleans and undefined values are created by typing in their name (true, null) or value (13, "abc"). You can combine and transform values 
+        with operators. We saw binary operators for arithmetic (+, -, *, /, and %), string concatenation (+), comparison 
+        (==, !=, ===, !==, <, >, <=, >=), and logic (&&, ||), as well as several unary operators (- to negate a number, ! to negate
+         logically, and typeof to find a value’s type) and a ternary operator (?:) to pick one of two values based on a third value.</li>
+        <li>A fragment of code that produces a value is called an expression. An expression between parentheses is also an expression, as is a binary operator 
+          applied to two expressions or a unary operator applied to one.</li>
+        </ul>
+
+      <h3>Different ways to write functions</h3>
+      <ol>
+        <li>var x = function(x,y) { <br>
+        return x*y;<br>
+        }</li>
+        <li>const x = (x,y) => x*y;</li>
+        <li>With arrow functions, you do n't have to type the function keyword, the return keyword, and the curly brackets. Arrow functions do not have their own this. They are not well suited for defining object methods.
+
+          Arrow functions are not hoisted. They must be defined before they are used.
+          
+          Using const is safer than using var, because a function expression is always constant value.
+          
+          You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:</li>
+      </ol>
+
+      <h3>Objects</h3>
+      <ul>
+        <li>When a function is called without an owner object, the value of <i>this</i> becomes the global object</li>
+        <li>Arrow functions have no <i>this</i></li>
+        <li>Functions that are stored in object properties are called “methods”.
+          Methods allow objects to “act” like object.doSomething().
+          Methods can reference the object as this.
+          The value of this is defined at run-time.
+          
+          When a function is declared, it may use this, but that this has no value until the function is called.
+          A function can be copied between objects.
+          When a function is called in the “method” syntax: object.method(), the value of this during the call is object.</li>
+
+      </ul>
+      <li>There’s a ladder object that allows to go up and down:<br>
+
+        let ladder = {<br>
+          step: 0,<br>
+          up() {<br>
+            this.step++;<br>
+          },<br>
+          down() {<br>
+            this.step--;<br>
+          },<br>
+          showStep: function() { // shows the current step<br>
+            alert( this.step );<br>
+          }<br>
+        };<br>
+        Now, if we need to make several calls in sequence, can do it like this:<br>
+        
+        ladder.up();<br>
+        ladder.up();<br>
+        ladder.down();<br>
+        ladder.showStep(); // 1<br>
+        Modify the code of up, down and showStep to make the calls chainable, like this:<br>
+        
+        ladder.up().up().down().showStep(); // 1</li>
+
+        <h3>eVvents</h3>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events">Events list</a></li>
+
+
+        
+
+        <script>
+      function makeUser() {
+          return {
+            name: "John",
+            ref: this
+           };
+} 
+
+    let user = makeUser();
+    console.log(user.ref.name); // What's the result?//error is created
+        </script>
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+      
+      
+      
+      
+      
+      
+            
+      
+      
+
+            
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+       
+        
+       
+       
+       
+       
+       
+
+
+
+    
+
+
+  </body>
+</html>
