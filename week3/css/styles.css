@@ -16,7 +16,7 @@ h3 {
     padding-left: 50px;
 }
 
-header {
+header, footer {
     background-color: pink;
     border-radius: 10px;
 }
