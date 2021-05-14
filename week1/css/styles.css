@@ -16,7 +16,19 @@ h3 {
     padding-left: 50px;
 }
 
-header {
+header, footer {
     background-color: pink;
     border-radius: 10px;
+}
+
+footer a:link {
+        color:black;
+      }
+footer a:visited {
+        color:black;
+      }
+footer {
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 10px;
 }
