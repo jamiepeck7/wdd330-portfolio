@@ -13,12 +13,18 @@
     <div>
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required>
-    </div>
-    <div>
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password">
-    </div>
-    <button type="submit">Submit</button>
+    </div>  
+    <label>Password: <input name="password" type="password" onChange="onChange()" /> </label><br />
+    <label>Confirm : <input name="confirm"  type="password" onChange="onChange()" /> </label><br />
+    
+    <p>
+    <button type="submit">Submit</button></p>
     </form>
+
+    <p>
+        A <b>button</b> won't submit a form on its own. A submit is a button but by default will submit the 
+        form whenever user clicks the submit button. <br>You add function to the button using JavaScript.The submit
+        button already has it defaulted in although you can add more to it using JavaScript.
+    </p>
 </body>
 </html>
