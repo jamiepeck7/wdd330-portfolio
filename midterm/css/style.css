@@ -1,14 +1,101 @@
+
 main {
-    background-color: tomato;
+    background-color: blueviolet;
     font-size: 16px;
-    width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
    
 }
+ form {
+     display: flex;
+     justify-content: space-between;
+ }
 
-.newItemEntry {
+ 
+ 
+ .newItemEntry {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    border: solid 1px darkblue;
+    border-radius: 4px;
+    padding: .75rem;
+    color: darkblue;
+    max-width: 75%;
+
     background-color: whitesmoke;
+ }
+
+ #addItem {
+    display: block;
+    background-color: turquoise;
+    width: 40px;
+    border-radius: 10px;
+ }
+ #newItem {
+     width: 75%;
+     height: 30px;
+     border-radius: 10px;
+ } 
+
+ .listTitle {
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .listContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    border: solid 1px darkblue;
+    border-radius: 4px;
+    padding: .75rem;
+    color: darkblue;
+    width: 100%;
+    max-width: 75%;
+    background-color: whitesmoke;
+ }
+    
+ #clearItems {
+     font-size: 1.25rem;
+     background-color: turquoise ;
+     border-radius: 5px;
+ }
+
+ .item {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 5px;
+    
+ }
+
+input[type="checkbox"]{
+    text-align: center;
+    width: 2.5rem;
+    min-width: 48px;
+    height: 2.5rem;
+    min-height: 48px;
+    cursor: pointer;
+    margin-right: 1.5rem;
 }
 
-.listContainer {
-    background-color: whitesmoke;
+input[type="checkbox"]:focus + label {
+    text-decoration: underline;
 }
+
+
+
+
+
+
+
+
