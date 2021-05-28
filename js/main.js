@@ -22,7 +22,7 @@ const links = [
     {
     label: "Week 6 --",
     url: "week6/week6.html"
-    },
+    }
 ]
 
 for (let i=0; i < links.length; i ++) {
