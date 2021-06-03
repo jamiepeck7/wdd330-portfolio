@@ -1,0 +1,34 @@
+body {
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 35px;
+    padding: 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+header, footer {
+    background-color: pink;
+    border-radius: 10px;
+}
+
+footer a:link {
+        color:black;
+      }
+footer a:visited {
+        color:black;
+      }
+footer {
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
