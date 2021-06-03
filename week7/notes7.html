@@ -19,7 +19,47 @@
    <hr>
     <h2>Notes</h2>
     <h3>Things to remember--</h3>
-    <h4>Chapter 11</h4>
+    <h4>Chapter 11-Further Functions</h4>
+    <li>Functions have built in properties such as length but they can also have custom properties added to them</li>
+    <li>All funtions have a call() and apply() methods that can invoke a function with the value of this bound to an object that is porovided in 
+      an argument.
+    </li>
+    <li>Functions can dynamically redefine themselves in the body of the function, depending on certain conditions.</li>
+    <li>A recursive function will keep invoking itself until a certain condition is met. </li>
+    <li>Callback is a function that is provided as an argument to another funtion.</li>
+    <li>Callbacks are used alot in asynchronous programming as part of the event loop. this means that a program can continue to run in a single 
+      thread while waiting for another task to be completed.
+    </li>
+    <li>Promises can be used instead of callbacks to deal with mutliple asynchronous(things happening at the same time) actions in sequence.
+      It is also a nicer mechanism for handling errors. 
+    </li>
+    <li>Functions that return other functions are higher-order functions</li>
+    <li>Closure is the process of keepinga  reference to a variable avaialbe outside the scope of the function it was orginally defined in.</li>
+    <li>A generator is creating by placing an asterisk* after the function keyword</li>
+    <li>A generator function will return an iterator object that provides a next() method. This returns the next value in sequence that is defined in the 
+      generator funtion.
+    </li>
+    <li>Functional programming involves breaking processes down in to steps that can be applied as a series of functions.</li>
+    <li>Pure functions are functions that don't rely on teh state of the code they are called from, have no side-effects, and always give the same
+      result when given the same arguements.
+    </li>
+    <li>Currying or partial application is the process of applying one argument at a time to a function. A new function is returned until all the arguement
+      have been used.
+    </li>
+    <h4>Chapter 13-Ajax</h4>
+    <li>Ajax is a technique for sending and recieving data asynchronously in the background</li>
+    <li>The data can be sent in many forms, but it usually in JSON.</li>
+    <li>Ajax can be used for making partial page updates without having to do a full page reload.</li>
+    <li>Ajax can be used for communicating with external APIs</li>
+    <li>Ajax requests can be made using the Fetch API</li>
+    <li>The response interface lets you control the response recieved from a request or response object.</li>
+    <li>The headers interface lets you create HTTP headers that can be added to a request or response object</li>
+    <li>The request interface allows you to create a request object that contains information about the request being made, such as the URL and 
+      headers.
+    </li>
+    <li>Requests can retrieve data using a GET request, or send data using a POST request.</li>
+    <li>the FormData interface makes it easier to send data from forms.</li>
+    
     
     
 
