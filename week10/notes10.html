@@ -37,6 +37,52 @@
 </li><br>
 <h4>Using Fetch</h4>
 <li>Fetch API provides JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.</li>
+<li>Basic fetch example
+  fetch('http://example.com/movies.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+</li>
+<li>Using fectch to post json-encoded data<br>
+  const data = { username: 'example' };
+
+fetch('https://example.com/profile', {
+  method: 'POST', // or 'PUT'
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+})
+.then(response => response.json())
+.then(data => {
+  console.log('Success:', data);
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+
+
+</li>
+<li>Uploading a file<br>
+  const formData = new FormData();
+const fileField = document.querySelector('input[type="file"]');
+
+formData.append('username', 'abc123');
+formData.append('avatar', fileField.files[0]);
+
+fetch('https://example.com/profile/avatar', {
+  method: 'PUT',
+  body: formData
+})
+.then(response => response.json())
+.then(result => {
+  console.log('Success:', result);
+})
+.catch(error => {
+  console.error('Error:', error);
+});
+
+</li>
 
 
 
