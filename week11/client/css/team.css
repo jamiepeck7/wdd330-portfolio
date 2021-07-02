@@ -1,0 +1,22 @@
+.errors {
+    border: 1px solid purple;
+    background-color: lightcoral;
+    padding: 5px;
+  }
+  form input {
+    margin: 0.5em 0;
+    font-size: 25px;
+    background-color: pink;
+    width: 300px;
+  }
+  form button {
+    font-size: 20px;
+    padding: 5px;
+    background-color: skyblue;
+  }
+  input:invalid {
+    box-shadow: 0 0 5px 1px teal;
+  }
+  .hidden {
+    display: none;
+  }
