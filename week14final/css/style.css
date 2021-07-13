@@ -24,7 +24,7 @@ section {
     align-items: center;
     justify-content: center;
     padding: 100px 0;
-    background-color: #DA4167;
+    background-color: paleturquoise;
 }
 .container {
     width: 100%;
@@ -36,7 +36,7 @@ section {
 .brand {
     text-align: center;
     font-size: 4rem;
-    color: whitesmoke;
+    color: black;
     margin-bottom: 30px;
 }
 form {
